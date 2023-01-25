@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -28,7 +28,10 @@
               <h1>Verificação OTP</h1>
               <p class="account-subtitle">Coloque o código recebido em seu e-mail</p>
 
-              <form action="login.html" autocomplete="off">
+              <div class="error-text alert alert-danger alert-dismissible fade show" style="display: none;">Erro</div>
+
+
+              <form id="form" autocomplete="off">
                 <div class="form-group fields-input">
                   <input class="form-control otp_field" type="number" name="otp1" placeholder="0" min="0" max="9" required onpaste="false">
                   <input class="form-control otp_field" type="number" name="otp2" placeholder="0" min="0" max="9" required onpaste="false">
