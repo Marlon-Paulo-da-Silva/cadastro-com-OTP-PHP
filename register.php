@@ -28,23 +28,27 @@
               <h1>Cadastre - se</h1>
               <p class="account-subtitle">Crie sua conta</p>
 
-              <form class="form">
-                <div class="error-text alert alert-danger alert-dismissible fade show">Erro</div>
+              <form class="form" id="form">
+                <div class="error-text alert alert-danger alert-dismissible fade show" style="display: none;">Erro</div>
                 <div class="form-group">
                   <label class="form-control-label">Nome</label>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="text" name="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-control-label">Telefone</label>
+                  <input class="form-control" type="text" name="phone">
                 </div>
                 <div class="form-group">
                   <label class="form-control-label">Endereço de e-mail</label>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="email" name="email">
                 </div>
                 <div class="form-group">
                   <label class="form-control-label">Senha</label>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="password" name="passwrd1">
                 </div>
                 <div class="form-group">
                   <label class="form-control-label">Confirme sua senha</label>
-                  <input class="form-control" type="text">
+                  <input class="form-control" type="password" name="passwrd2">
                 </div>
                 <div class="form-group mb-0">
                   <button class="btn btn-lg btn-block btn-primary w-100 submit" type="submit">Cadastrar</button>
@@ -52,17 +56,17 @@
               </form>
 
               <!-- <div class="login-or">
-<span class="or-line"></span>
-<span class="span-or">or</span>
-</div>
+                    <span class="or-line"></span>
+                    <span class="span-or">or</span>
+                  </div>
 
-<div class="social-login">
-<span>Register with</span>
-<a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a><a href="#" class="google"><i class="fab fa-google"></i></a>
-</div>
+                  <div class="social-login">
+                  <span>Register with</span>
+                  <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a><a href="#" class="google"><i class="fab fa-google"></i></a>
+                  </div> -->
 
-<div class="text-center dont-have">Already have an account? <a href="login.html">Login</a></div>
-</div> -->
+                  <div class="text-center dont-have">Já tem uma conta? <a href="login.php">Acessar</a></div>
+                  </div>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+form = document.querySelector('#form');
 
 submitbtn = document.querySelector('button[type="submit"]');
 
@@ -9,9 +10,10 @@ $("form").on("submit", function (event) {
 });
 
 submitbtn.onclick = () => {
+  console.log("cliquei!");
   let xhr = new XMLHttpRequest();
 
-  xhr.open("POST", "/php/signup.php", true);
+  xhr.open("POST", "./php/signup.php", true);
   xhr.onload = () => {
     if(xhr.readyState === XMLHttpRequest.DONE){
       if(xhr.status == 200){
@@ -19,8 +21,8 @@ submitbtn.onclick = () => {
         if(data == "Success"){
           location.href = "./verify.php"
         } else {
-          error.textContent = data;
-          error.style.display = "block";
+          errortext.textContent = data;
+          errortext.style.display = "block";
         }
       }
     }
