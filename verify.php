@@ -1,4 +1,6 @@
 <?php
+
+
   // se usuário estiver verificado 
  session_start();
  include 'php/db.php';
