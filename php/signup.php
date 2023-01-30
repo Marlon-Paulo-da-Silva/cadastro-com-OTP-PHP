@@ -3,6 +3,7 @@
   
   include_once 'db.php';
   include_once 'hash.php';
+  include 'mail.php';
 
   $name = $_POST['name'];
   $phone = $_POST['phone'];
@@ -56,10 +57,11 @@
             
             $sendMail = sendMail($name, $receiver, $subject, $body);
 
-            if($sendMail == "Success"){
+            if($sendMail){
               echo "Success";
-            } else {
-              echo "Problema ao enviar e-mail!!  ". $sendMail;
+            }
+            if(!$sendMail) {
+              echo "erro ao enviar e-mail";
             }
           } else {
             echo "Algo deu errado !!";

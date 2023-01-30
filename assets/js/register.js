@@ -18,11 +18,14 @@ submitbtn.onclick = () => {
     if(xhr.readyState === XMLHttpRequest.DONE){
       if(xhr.status == 200){
         let data = xhr.response;
-        if(data == "Success"){
-          location.href = "./verify.php"
+
+        console.log(data);
+
+        if(data == true){
+          // location.href = "./response.php"
         } else {
-          errortext.textContent = data;
-          errortext.style.display = "block";
+          // errortext.textContent = 'Erro ao enviar e-mail';
+          // errortext.style.display = "block";
         }
       }
     }
